@@ -60,7 +60,7 @@ export const asyncRouterMap = [
     component: Layout,
     icon: 'icon',
     noDropdown: true,
-    children: [{ path: 'index', component: _import('svg-icons/index'), name: 'icons' }]
+    children: [{ path: 'index', component: _import('svg-icons/index'), name: '图标' }]
   },
   {
     path: '/components',
@@ -161,7 +161,8 @@ export const asyncRouterMap = [
     name: 'zip',
     icon: 'zip',
     children: [
-      { path: 'download', component: _import('zip/index'), name: 'export zip' }
+      { path: 'download', component: _import('zip/index'), name: 'export zip' },
+      { path: 'test', component: _import('test/index'), name: 'test' }
     ]
   },
   {
@@ -180,6 +181,14 @@ export const asyncRouterMap = [
     icon: 'clipboard',
     noDropdown: true,
     children: [{ path: 'index', component: _import('clipboard/index'), name: 'clipboard' }]
+  },
+  {
+    path: '/test',
+    component: Layout,
+    redirect: 'noredirect',
+    icon: 'clipboard',
+    noDropdown: true,
+    children: [{ path: 'index', component: _import('test/test'), name: 'test' }]
   },
 
   { path: '*', redirect: '/404', hidden: true }
