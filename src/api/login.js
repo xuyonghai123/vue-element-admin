@@ -22,7 +22,7 @@ export function logout() {
 export function getUserInfo(token) {
   return fetch({
     url: '/user/info',
-    method: 'get',
+    method: 'post',
     params: { token }
   })
 }

@@ -33,10 +33,10 @@
         </el-menu-item>
     </el-menu>
     <el-menu
-      :default-active="activeIndex2"
+      default-active="2"
       class="el-menu-demo"
       mode="horizontal"
-      @select="handleSelect"
+      select="handleSelect"
       background-color="#545c64"
       text-color="#fff"
       active-text-color="#ffd04b">
@@ -81,7 +81,6 @@
     },
     methods: {
       fetchData() {
-        console.log('1111111111111111')
         this.listLoading = true
         fetchOrder().then(response => {
           console.log(response.data)
