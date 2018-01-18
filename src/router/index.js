@@ -160,10 +160,7 @@ export const asyncRouterMap = [
     redirect: '/zip/download',
     name: 'zip',
     icon: 'zip',
-    children: [
-      { path: 'download', component: _import('zip/index'), name: 'export zip' },
-      { path: 'test', component: _import('test/index'), name: 'test' }
-    ]
+    children: [{ path: 'download', component: _import('zip/index'), name: 'export zip' }]
   },
   {
     path: '/theme',
@@ -187,8 +184,10 @@ export const asyncRouterMap = [
     component: Layout,
     redirect: 'noredirect',
     icon: 'clipboard',
-    noDropdown: true,
-    children: [{ path: 'index', component: _import('test/test'), name: 'test' }]
+    children: [
+      { path: 'test', component: _import('test/test'), name: 'test' },
+      { path: 'qwer', component: _import('test/index'), name: 'qwer' }
+    ]
   },
 
   { path: '*', redirect: '/404', hidden: true }
