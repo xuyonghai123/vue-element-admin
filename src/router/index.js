@@ -184,6 +184,7 @@ export const asyncRouterMap = [
     component: Layout,
     redirect: 'noredirect',
     icon: 'clipboard',
+    name: 'test',
     children: [
       { path: 'test', component: _import('test/test'), name: 'test' },
       { path: 'qwer', component: _import('test/index'), name: 'qwer' }

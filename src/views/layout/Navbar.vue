@@ -13,11 +13,31 @@
 			<el-dropdown-menu class="user-dropdown" slot="dropdown">
 				<router-link class='inlineBlock' to="/">
 					<el-dropdown-item>
+            <i class="el-icon-menu"></i>
 						首页
 					</el-dropdown-item>
 				</router-link>
+        <router-link class='inlineBlock' to="/test/test">
+          <el-dropdown-item>
+            <i class="el-icon-setting"></i>
+            个人信息
+          </el-dropdown-item>
+        </router-link>
+        <router-link class='inlineBlock' to="/test/qwer">
+          <el-dropdown-item>
+            <i class="el-icon-edit"></i>
+            修改密码
+          </el-dropdown-item>
+        </router-link>
+        <router-link class='inlineBlock' to="/test/qwer">
+          <el-dropdown-item>
+            <i class="el-icon-share"></i>
+            我的通知
+          </el-dropdown-item>
+        </router-link>
 				<a target='_blank' href="https://github.com/PanJiaChen/vue-element-admin/">
 					<el-dropdown-item>
+            <i class="el-icon-share"></i>
 						项目地址
 					</el-dropdown-item>
 				</a>

@@ -6,3 +6,12 @@ export function fetchOrder() {
     method: 'post'
   })
 }
+
+export function formSubmit(form) {
+  const data = form
+  return fetch({
+    url: '/form/submit',
+    method: 'post',
+    data
+  })
+}
